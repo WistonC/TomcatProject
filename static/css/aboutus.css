@@ -1,0 +1,14 @@
+body{
+    margin:0px;
+    padding: 0px;
+    background-image: url('../static/img/booksotre.png');
+    background-repeat: no-repeat;
+    background-size: 110%;
+}
+
+.main-section {
+    padding-top: 10%;
+    font-size: 25px;
+    text-align: center;
+    font-family: fantasy;
+}

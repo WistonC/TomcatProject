@@ -1,0 +1,55 @@
+ul{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 10px 30px rgba(0,0,0,0.02);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width:100%;
+    z-index: 1;
+    background-color: #FFFFFF;
+}
+.logo img{
+    height:45px;
+}
+h1{
+    position: relative;
+    font-size: xx-large;
+    font-family: "Adobe Devanagari";
+    color: #40c6c4;
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    height:40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color:#585b5b;
+    letter-spacing: 1px;
+}
+.logout-btn{
+    background-color: #36b7b5;
+    font-size: 16px;
+    font-family: "Droid Sans";
+    text-align: center;
+    padding: 8px;
+    float:right;
+    cursor:pointer;
+    border-radius: 10px;
+}

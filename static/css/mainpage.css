@@ -1,0 +1,38 @@
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: poppins;
+
+}
+
+#main_section {
+    padding-top: 20px;
+    background-color: #40c6c4 ;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    font-family: Corbel;
+    font-size: large;
+
+
+}
+
+.row1, .row2 {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+
+}
+
+.column {
+    flex: 33.33%;
+    padding: 20px;
+    border-color: black;
+}
+
+
+.addcart button {
+    position: relative;
+    border-radius: 10px;
+    size: auto;
+}
