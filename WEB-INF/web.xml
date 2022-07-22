@@ -9,68 +9,18 @@
     </filter>
     <filter-mapping>
         <filter-name>CacheFilter</filter-name>
-        <url-pattern>/WEB-INF/mainpage.jsp</url-pattern>
-        <url-pattern>/WEB-INF/aboutus.jsp</url-pattern>
-        <url-pattern>/WEB-INF/request.jsp</url-pattern>
+        <url-pattern>/WEB-INF/home.jsp</url-pattern>
+        <url-pattern>/WEB-INF/about.jsp</url-pattern>
+        <url-pattern>/WEB-INF/contact.jsp</url-pattern>
     </filter-mapping>
 
-
-
     <servlet>
-        <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>LoginServlet</servlet-class>
+        <servlet-name>MainTest</servlet-name>
+        <jsp-file>/WEB-INF/MainTest.jsp</jsp-file>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>LoginServlet</servlet-name>
-        <url-pattern>/LoginServlet</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>LogoutServlet</servlet-name>
-        <servlet-class>LogoutServlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>LogoutServlet</servlet-name>
-        <url-pattern>/LogoutServlet</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>UserServlet</servlet-name>
-        <servlet-class>UserServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>UserServlet</servlet-name>
-        <url-pattern>/UserServlet</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>UserSecurityServlet</servlet-name>
-        <servlet-class>UserSecurityServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>UserSecurityServlet</servlet-name>
-        <url-pattern>/UserSecurityServlet</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>RequestServlet</servlet-name>
-        <servlet-class>RequestServlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>RequestServlet</servlet-name>
-        <url-pattern>/RequestServlet</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>NavButton</servlet-name>
-        <servlet-class>NavButton</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>NavButton</servlet-name>
-        <url-pattern>/NavButton</url-pattern>
+        <servlet-name>MainTest</servlet-name>
+        <url-pattern>/MainTest</url-pattern>
     </servlet-mapping>
 </web-app>

@@ -12,23 +12,24 @@ public class JDBCUtils {
     private static String user;
     private static String password;
     private static String driver;
+
     /**
      * 文件的读取，只需要读取一次即可拿到这些值。使用静态代码块
      */
-    static{
+    static {
         //读取资源文件，获取值。
 
         try {
             url = "jdbc:mysql://localhost:3306/db4";
             user = "root";
             password = "root";
-            driver = "com.mysql.jdbc.Driver";
+            // driver = "com.mysql.jdbc.Driver";
+            driver = "com.mysql.cj.jdbc.Driver";
             //4. 注册驱动
             Class.forName(driver);
         }
         /*catch (IOException e) {
-            e.printStackTrace();}*/
-        catch (ClassNotFoundException e) {
+            e.printStackTrace();}*/ catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
@@ -36,6 +37,7 @@ public class JDBCUtils {
 
     /**
      * 获取连接
+     *
      * @return 连接对象
      */
     public static Connection getConnection() throws SQLException {
@@ -45,11 +47,12 @@ public class JDBCUtils {
 
     /**
      * 释放资源
+     *
      * @param stmt
      * @param conn
      */
-    public static void close(Statement stmt,Connection conn){
-        if( stmt != null){
+    public static void close(Statement stmt, Connection conn) {
+        if (stmt != null) {
             try {
                 stmt.close();
             } catch (SQLException e) {
@@ -57,7 +60,7 @@ public class JDBCUtils {
             }
         }
 
-        if( conn != null){
+        if (conn != null) {
             try {
                 conn.close();
             } catch (SQLException e) {
@@ -69,11 +72,12 @@ public class JDBCUtils {
 
     /**
      * 释放资源
+     *
      * @param stmt
      * @param conn
      */
-    public static void close(ResultSet rs,Statement stmt, Connection conn){
-        if( rs != null){
+    public static void close(ResultSet rs, Statement stmt, Connection conn) {
+        if (rs != null) {
             try {
                 rs.close();
             } catch (SQLException e) {
@@ -81,7 +85,7 @@ public class JDBCUtils {
             }
         }
 
-        if( stmt != null){
+        if (stmt != null) {
             try {
                 stmt.close();
             } catch (SQLException e) {
@@ -89,7 +93,7 @@ public class JDBCUtils {
             }
         }
 
-        if( conn != null){
+        if (conn != null) {
             try {
                 conn.close();
             } catch (SQLException e) {
